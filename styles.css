@@ -1,0 +1,324 @@
+
+/* Stephen Kelly
+   x12386816
+   Group F*/
+
+.app {
+font-size: 14px;
+font-family: Verdana, HelveticaNeue, Droid Sans, Arial, Sans-Serif;
+cursor: default;
+background: rgb(250, 250, 250);
+color: rgb(123, 123, 123);
+}
+.inline {
+display: inline-block;
+vertical-align: top;
+}
+.clear {
+clear: both;
+}
+
+td {
+text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
+max-width: 140px;
+}
+
+a {
+color: #33ADFF;
+text-decoration: none;
+cursor: pointer;
+}
+
+h3 {
+font-size: 3em;
+color: #33ADFF;
+margin-bottom: 0;
+}
+h4 {
+font-size: 1.5em;
+margin-bottom: 0;
+color: #33ADFF;
+}
+
+
+#logo { 
+background-image: url(Images/Logo.png); 
+background-repeat: no-repeat;
+background-position:right top; 
+padding-top:120px; 
+}
+
+
+#header {
+background: #7EC6F2;
+width: 100%;
+height: 80px;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 2;
+}
+
+
+    
+
+
+#controls {
+width: 150px;
+height:100px;
+float: left;
+opacity:1;
+}
+#controls_inner {
+padding: 20px 10px 0 10px;
+text-align: center;
+}
+
+.ctn_btn {
+border: 0;
+cursor: pointer;
+margin: 0 3px;
+}
+
+#search {
+width: 260px;
+height: 80px;
+float: left;
+text-align: center;
+}
+#search_input {
+width: 193px;
+background: #fff;
+border: 0;
+margin: 24px 25px;
+padding: 6px;
+font-size: 100%;
+}
+
+#cover {
+height: 60px;
+float: left;
+}
+
+#playing {
+width: 300px;
+height: 80px;
+float: left;
+float: left;
+border-left: cornflowerblue;
+border-right: #33ADFF;
+}
+#playing_meta {
+font-size: 14px;
+text-align: center;
+margin-top: 8px;
+}
+#playing_author {
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+
+
+
+#playing_title {
+font-size: 12px;
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+
+
+.meta_link {
+text-decoration: none;
+color: black;
+font: Sans-serif;
+font-size: large;
+}
+
+
+.meta_link:hover {
+text-decoration: underline;
+}
+
+
+
+#slider {
+background: rgb(229, 229, 229);
+height: 5px;
+margin-left: 45px;
+margin-right: 45px;
+cursor: pointer;
+}
+
+
+
+#progress {
+background: #33ADFF;
+height: 5px;
+width: 0%;
+position: relative;
+}
+
+
+
+
+
+#progress_hand {
+position: absolute;
+background: rgb(130,130,130);
+width: 7px;
+height: 7px;
+right: -3px;
+border-radius: 5px;
+bottom: -1px;
+}
+
+
+
+#times {
+margin-top: 10px;
+font-size: 12px;
+}
+
+
+#time_current {
+width: 40px;
+float: left;
+text-align: right;
+margin-top: -7px;
+}
+
+
+
+#time_total {
+width: 40px;
+float: right;
+text-align: left;
+margin-top: -7px;
+}
+
+@media screen and (max-width: 950px) {
+#cover {
+display: none;
+}
+}
+
+
+@media screen and (max-width: 860px) {
+#search {
+display: none;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+#playing {
+display: none;
+}
+}
+
+
+#menu {
+margin-bottom: 15px;
+}
+.link_tabs {
+color: black;
+color: #33ADFF;
+text-decoration: none;
+padding: 0 3px;
+}
+
+.link_tabs.active {
+color: #33ADFF;
+background: #B6B6B6;
+border-radius: 3px;
+}
+
+
+#wrapper {
+padding-top: 90px;
+}
+#content {
+padding: 0 15px;
+}
+
+
+.cover {
+opacity: 0.1;
+transition: opacity 0.2s ease-in-out;
+}
+
+
+.loader {
+display: table;
+width: 50%;
+height: 100px;
+}
+
+.loader_content {
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+font-size: 3em;
+color: black;
+}
+
+.login_link {
+border: cornflowerblue;
+border-radius: 10px;
+}
+
+
+
+
+.grid_list_small {
+margin: 10px;
+width: 120px;
+display: inline-block;
+}
+
+.grid_list {
+margin: 20px;
+width: 160px;
+}
+
+.grid_title {
+text-overflow:ellipsis;
+white-space: nowrap;
+overflow: hidden;
+text-align: center;
+}
+
+
+.album_cover_view {
+float: left;
+width: 15%;
+margin-left: 2%;
+margin-right: 2%;
+}
+
+.album_track_list {
+background: #fff;
+float: left;
+width: 40%;
+}
+
+
+.table_tracks {
+width: 50%;
+border-collapse: collapse;
+border-spacing: 0;
+}
+.table_tracks tr:nth-child(odd) {
+background: rgb(244, 244, 244);
+}
+
+.table_tracks td {
+padding: 4px;
+}
+
+.link_track:hover {
+text-decoration: underline;
+cursor: hand;
+}
